@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>
+			Login Form 
+		</title>
+		<link rel="stylesheet" href="style1.css">
+		<script type="text/javascript">
+		
+					function notEmpty(element,message)
+			{
+				if(element.value.length==0)
+				{
+					alert(message);
+					element.focus();
+					return false;
+				}
+				else{
+					return true;
+				}
+			}
+						function notPassword(element,message)
+			{
+				if(element.value.length==0)
+				{
+					alert(message);
+					element.focus();
+					return false;
+				}
+				else{
+					return true;
+				}
+			}
+			function emailformat(element,message){
+				exp=/^[\w\.\+\_]+\@[0-9a-zA-Z\.\_]+\.[0-9a-zA-Z]{2,4}$/;
+					if(element.value.match(exp))
+					{
+						return true;
+					}
+					else{
+						alert(message);
+						element.focus();
+						return false;
+					}
+				}	
+				function Validation()
+				{
+				if(notEmpty(document.form1.username,'Please enter your username')&&emailformat(document.form1.username,'Please enter valid email')&&notPassword(document.form1.password,'Please enter your password'))
+				{
+				return true;
+				window.location.href="medicinedetail.html";
+				}
+				else{
+				return false;
+				}
+				}
+		</script>
+	</head>
+	<body> 
+			<div class="navbar">
+					<div class="logo">
+					<h1>PharmaWeb</h1>
+					</div>
+					<div class="menu">
+					<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="service2.html">SERVICE</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+					
+			       </div>
+			</div>
+							
+				<div class="contents">
+			<h1 style="color:#A059E2;">Medicine Knowledge</h1>
+			<p class="para">
+			Medicine is constantly evolving, and even a seasoned physician with years of experience hasn’t <br/>“seen it all.”
+			A desire for and an understanding of the need for a lifelong-learning approach to the<br/>practice 	of medicine is a requisite
+			attribute for physicians providing quality health care. For this<br/> reason, the PharmaWeb of Medical Knowledge seeks to ensure that
+			residents are trained to <br/>continually investigate, question, and seek new knowledge. But knowledge without application<br/> is fruitless.
+			Sharing those best practices with medical colleagues and employing that knowledge<br/> in the diagnosis and treatment of patients is 
+			equally as important as obtaining it.
+			</p>
+			<div class="form">
+			<h2>Login Here</h2>
+			<form name="form1" onsubmit="return Validation()">
+			<table>
+			<tr>
+			<td>
+			<input type="text" name="username" placeholder="Enter Username Here" id="username">
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<input type="password" name="password" placeholder="Enter password here" id="password">
+			</td>
+			</tr>
+			<tr>
+			<td><a href="main.html"><input type="button" class="btn" value="Log in" onclick="return Validation()"></a>
+			</td>
+			</tr>
+			<tr>
+			<td>Don't have an account?</td>
+			</tr>
+			<tr>
+			<td><a href="#">Sign up</a>here</a></p>
+			</td>
+			</tr>
+			<tr>
+			<td>Log in with</td>
+			</tr>
+			<tr>
+			<td><div class="icon">
+			<a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+			<a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+			<a href="https://myaccount.google.com/?utm_source=sign_in_no_continue&pli=1"><ion-icon name="logo-google"></ion-icon></a>
+			<a href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+			</td>
+			</tr>
+			</table>
+			</form>
+			</div>
+			</div>
+			<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+	
+</body>
+</html>

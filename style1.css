@@ -1,0 +1,165 @@
+body{
+font-size:20px;
+background:url(medicine1.jpg);
+font-family:sans-serif;
+background-size: cover;
+color:black;
+background-position:center;
+background-repeat:no-repeat;
+letter-spacing:0.1px;
+}
+p{
+color:black;
+font-family:sans-serif;
+}
+.navbar{
+font-family:sans-serif;
+width:1200px;
+height:75 px;
+margin:auto;
+}
+.icon{
+font-family:sans-serif;
+width:200px;
+float:left;
+height:70px;
+}
+.logo{
+color:#21A8AF;
+font-size:35px;
+font-family:sans-serif;
+float:left;
+
+}
+.menu{
+width:400px;
+float:left;
+height:70px;
+font-family:sans-serif;
+}
+ul{
+float:left;
+display:flex;
+align-items:center;
+font-family:sans-serif;
+}
+ul li{
+list-style:none;
+margin-left:50px;
+margin-top:25px;
+font-size:20px;
+}
+ul li a{
+color:black;
+font-family:arial;
+font-weight:bold;
+}
+ul li a:hover{
+color:yellow;
+border:1px solid white;
+transition:.5s;	
+}
+.contents{
+font-family:sans-serif;
+float:left;
+width:1200px;
+height:auto;
+margin:auto;
+position:relative;
+margin-left:65px;
+padding-left:10px;
+}
+.form{
+font-family:sans-serif;
+width:250px;
+height:380px;
+background:linear-gradient(to top,rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+position:absolute;
+top:-20px;
+left:870px;
+border-radius:10px;
+padding:25px;
+}
+.form h2{
+width:220px;
+font-family:sans-serif;
+text-align:center;
+color:orange;
+font-size:20px;
+background-color:white;
+border-radius:10px;
+margin:2px;
+padding:2px;
+}
+.form input{
+width:240px;
+height:35px;
+background:transparent;
+border-bottom:1px solid orange;
+border-left:none;
+border-right:none;
+border-top:none;
+color:white;
+font-size:15px;
+letter-spacing:1.5px;
+margin-top:30px;
+font-family:sans-serif;
+}
+::placeholder{
+color:white;
+font-family:sans-serif;
+}
+input[type=button] {
+width:240px;
+height:40px;
+border:none;
+margin-top:30px;
+font-size:18px;
+background-color: orange;
+border:none;
+text-decoration:none;
+color: white;
+cursor: pointer;
+border-radius:10px;
+         }
+.btn:hover{
+background:white;
+color:black;
+}
+.icon a{
+text-decoration:none;
+color:white;
+}
+.icon ion-icon{
+color:white;
+font-size:30px;
+padding-left:14px;
+padding-top:5px;
+}
+.icon ion-icon:hover{
+color:orange;
+}
+.aboutus{
+margin-left:65px;
+}
+.imagegallery{
+float:left;
+}
+.faq ul{
+display:block;
+
+}
+.faq ol{
+font-size:20px;
+}
+.healthtips{
+font-size:20px;
+}
+.video{
+padding:500px;
+padding-top:20px;	
+}
+
+
+
+
